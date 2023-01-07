@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --white:  #FFFFFF;
+    --black: #000000;
+    --blue: #40AABE;
+    --light-blue: #90E0EF;
+    --sky: #CAF0F8;
+    --footer: #303030;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+ font-family: 'Poppins', sans-serif;     
+}
+a{
+    text-decoration: none;
+}
+.container{
+    padding: 0 6.25rem;
+}
+.primary-btn >a{
+    padding: 0.75rem 1.5rem;
+    background-color: var(--blue);
+    border-radius: 99px;
+    color: var(--white);
+    font-weight: 600;
+
+}
+#navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    transition: 0.5s top ease-in-out;
+}
+#navbar .container{
+    padding-block: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: brightness(50%);
+}
+#hamburger-btn{
+    display: none;
+    width: 20px;
+    height: 20px;
+    background-color: var(--white);
+    z-index: 1000;
+}
+
+#hamburger-btn>span{
+    width: 8px;
+    height: 2px;
+    background-color: white;
+    margin: 2px;
+}
+
+#navbar .container .nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+#navbar .container .nav-menu a{
+    color: var(--white);
+    font-weight: 500;
+}
+
+#navbar .container .nav-menu .nav-link{
+    display: flex;
+    gap: 2rem;
+}
+#navbar .container .nav-menu .nav-link .active{
+    color: var(--blue);
+}
+#hero-section .container{
+    min-height: 85vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6) ),url(/assets/hero-image.png);
+    display: flex;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+#hero-section .container .hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#hero-section .container .hero-content .heading >h1{
+    font-size: 64px;
+    color: var(--blue);
+}
+#hero-section .container .hero-content .heading >p{
+    font-size: 18px;
+    color: var(--white);
+}
+#hero-section .container .hero-image >img{
+    width: 400px;
+    
+}
+
+#hero-section .container .hero-content .lets-talk-btn >a{
+    padding-inline: 4rem;
+
+}
+
+#about-section .container{
+    padding-block: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+#about-section .container .about-image> img{
+    width: 400px;
+}
+
+#about-section .container .about-content{
+    text-align: end;
+}
+
+#about-section .container .about-content> h2{
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+#about-section .container .about-content>p{
+    font-size: 18px;
+}
+
+#service-section .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--black);
+    padding-block: 3rem;
+    background-color: var(--light-blue);
+}
+#service-section .container>h2{
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+
+#service-section .container .service-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 1rem;
+}
+
+#service-section .container .service-content .service-card{
+    padding: 3rem;
+    background-color: var(--white);
+    box-shadow: 0 0 16px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+}
+#service-section .container .service-content .service-card .service-detail{
+    height: 100%;
+}
+
+#service-section .container .service-content .service-card .service-detail >h3{
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+#service-section .container .service-content .service-card>a{
+    font-weight: 600;
+    color: var(--blue);
+}
+#contact-section .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact-section > h2{
+    font-size: 35px;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact-section .container{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+#contact-section .container .form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 717px;
+    height: 808px;
+    padding: 32px 48px;
+    gap: 32px;
+    border-radius: 24px;
+    background-color: var(--light-blue);
+}
+#contact-section .container > img{
+   margin-left: 10vh;
+   margin-top: 10vh;
+    height: 50vh;
+    width: 50vh;
+}
+
+.input > input{
+    background-color: var(--sky);
+    border: 2px solid white;
+    border-radius: 12px;
+    width: 621px;
+    height: 54px;
+}
+.name .input>input {
+    width: 294.5px;
+    padding: 12px 16px;
+    gap: 10px;
+}
+.input input::placeholder{
+    padding-left: 10px;
+    font-family: "Poppins";
+    font-style: normal;
+}
+#contact-section .container .form .name{
+    margin-top: 20px;
+    
+}
+#contact-section .container .form .name >label{
+    margin-bottom: 10px;
+    
+}
+#contact-section .container .form .Email> label{
+    margin-bottom: 10px;
+}
+#contact-section .container .form .Phone> label{
+    margin-bottom: 10px;
+}
+#contact-section .container .form .gender{
+    margin-bottom: 10px;
+}
+#contact-section .container .form .Message> label{
+    margin-bottom: 10px;
+}
+
+
+.name > label{
+    font-weight: 700;
+}
+.Email > label{
+    font-weight: 700;
+}
+.Phone > label{
+    font-weight: 700;
+}
+.gender > label{
+    font-weight: 700;
+}
+.Message > label{
+    font-weight: 700;
+}
+.gender > .input-gen{
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-right: 30rem;
+}
+input[type="radio"]{
+    margin-top: 10px;
+    width: 30px;
+    height: 15px;
+    display: grid;   
+}
+.Message >textarea{
+    width: 621px;
+    height: 204px;
+    background: var(--sky);
+    border: 2px solid white;
+    border-radius: 12px;
+    font-family: "Poppins";
+}
+.Message textarea::placeholder{
+    padding: 15px;
+}
+
+.submit >input{
+    width: 276px;
+    height: 62px;
+    background: white;
+    border: 1px solid var(--light-blue);
+    border-radius: 24px;
+    color: var(--blue);
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+#footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    padding: 48px 100px;
+    gap: 32px;
+    color: white;
+    background:var(--footer);
+    position: absolute;
+    width: 1260px;
+    height: 393px;
+    border-radius: 40px 40px 0px 0px;
+    left: 0px;
+}
+.ln{
+    width: 1060px;
+    height: 1.71px;
+    background: white;
+}
+.social >a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    
+}
+.social a:hover{
+    color: var(--light-blue);
+    
+}
+@media only screen and (max-width: 1280px){
+    
+
+}
+@media only screen and (max-width: 1024px){
+    .container{
+        padding: 0 4rem;
+    }
+    #navbar .container{
+        position: relative;
+    }
+    .nav-menu .nav-link{
+        flex-direction: column;
+    }
+    .nav-menu{
+        padding: 2rem 3rem;
+        background-color: var(--black);
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: -300px;
+        flex-direction: column;
+        transition: 0.5s right ease-in-out;
+    }
+    .nav-menu.active{
+        right: 0;
+    }
+    #hamburger-btn{
+        display: inline;
+
+    }
+
+}
+@media only screen and (max-width: 768px){
+    .container{
+        padding: 0 3rem;
+    }
+    
+}
+@media only screen and (max-width: 480px){
+    .container{
+        padding: 0.5rem;
+    }
+    
+}
+
+

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="js.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-logo">
+                <img src="./assets/nav-logo.png" alt="nav-logo">
+            </div>
+            <div id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-menu">
+                <div id="close-btn" style="width: 20px;"></div>
+                <div class="nav-link">
+                    <a href="#" class="active">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Our Work</a>
+                </div>
+                <div class="primary-btn">
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="heading">
+                    <h1>Cloudius</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie sed purus in posuere. Pellentesque   habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+                </div>
+                <div class="primary-btn lets-talk-btn">
+                    <a href="#">Lets Talk</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./assets/hero-icon.png" alt="hero-icon">
+            </div>
+        </div>
+    </section>
+    <section id="about-section">
+        <div class="container">
+            <div class="about-image">
+                <img src="./assets/about-icon.png" alt="about-image">
+            </div>
+                <div class="about-content">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum sem sit amet auctor consequat. Suspendisse 
+                   ullamcorper elit vel arcu placerat, a fringilla lorem bibendum. Phasellus ac orci a justo bibendum gravida sed nec 
+                   sem. Suspendisse et magna ut augue imperdiet porttitor et egestas elit. In viverra eget ligula vitae eleifend. 
+                   Vestibulum consequat tempor leo a pharetra.
+                </p>
+                </div>
+        </div>
+    </section>
+    <section id="service-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-content">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="./assets/cloud-performance.png" alt="icon1">
+                    </div>
+                    <div class="service-detail">
+                        <h3>Cloud Performance</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo adipiscing arcu adipiscing cras nulla commodo. Sit 
+                             montes, eu quam pharetra. Egestas tellus sit feugiat fermentum convallis.</p>
+                    </div>
+                    <a href="#">Read More>></a>
+                </div>
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="./assets/robust-network.png" alt="">
+                        </div>
+                        <div class="service-detail">
+                         <h3>Robust Network</h3>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo adipiscing arcu adipiscing cras nulla commodo. Sit 
+                         montes, eu quam pharetra. Egestas tellus sit feugiat fermentum convallis.</p>
+                        </div>
+                        <a href="#">Read More>></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="./assets/scalable-config.png" alt="">
+                        </div>
+                        <div class="service-detail">
+                         <h3>Scalable Configuration</h3>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo adipiscing arcu adipiscing cras nulla commodo. Sit 
+                         montes, eu quam pharetra. Egestas tellus sit feugiat fermentum convallis.</p>
+                        </div>
+                        <a href="#">Read More>></a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="./assets/secure-cloud.png" alt="">
+                        </div>
+                        <div class="service-detail">
+                         <h3>Secure Cloud</h3>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo adipiscing arcu adipiscing cras nulla commodo. Sit 
+                         montes, eu quam pharetra. Egestas tellus sit feugiat fermentum convallis.</p>
+                        </div>
+                        <a href="#">Read More>></a>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-section">
+        <h2>Contact Us</h2>
+        <div class="container">
+            <img src="./assets/contact-icon.png" alt="">
+             <form action="#" class="form" id="form">
+                <div class="name">
+                   <label for="name">Name</label>
+                        <div class="input">
+                            <input type="text" name="first" id="first" placeholder="First Name">
+                            <input type="text" name="last"  id="last" placeholder="Last Name">
+                        </div>
+                </div>
+                <div class="Email" >
+                <label for="email">Email</label>
+                <div class="input"><input type="email" name="email" id="email" placeholder="example@gmail.com"></div>
+                </div>
+                <div class="Phone">
+                    <label for="phone">Phone Number</label>
+                    <div class="input"><input type="text" name="phone" id="phone" placeholder="Input your phone number..."> </div>
+                </div>
+                <div class="gender">
+                    <label for="gender">Gender</label>
+                    <div class="input-gen">
+                       <div><input type="radio" name="gender" id="gender">Male
+                    </div>
+                        <div><input type="radio" name="gender" id="gender">Female
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="Message">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Input your Message..."></textarea>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="footer-section">
+        <img src="./assets/nav-logo.png" alt="">
+        <p>Jalan Mangga Dua Raya 1/1, Jakarta Tenggara, 57155</p>
+        <div class="ln"></div>
+        <div class="social">
+            <a href="#"><i id="face" class="fa-brands fa-facebook fa-xl"></i></a>
+            <a href="#"><i id="wa" class="fa-brands fa-whatsapp fa-xl"></i></a>
+            <a href="#"><i id="ig" class="fa-brands fa-instagram fa-xl"></i></a>
+            <a href="#"><i id="mail" class="fa-regular fa-envelope fa-xl"></i></a>
+        </div>
+        <div class="copy">
+            <p>Copyright 2022 Cloudius, All rights reserved.</p>
+        </div>
+    </section>
+    
+</body>
+</html>
